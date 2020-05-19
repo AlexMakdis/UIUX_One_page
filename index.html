@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dorian Gray</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/draw.png">
+
+
+</head>
+
+<body>
+    <div class="wrapper wrapper--footer">
+        <div class="g-fb-container">
+            <div class="g-fb-row ">
+                <div class="g-fb-col-12 g-fb-col-md-12 titel">
+                    <h1>
+                        Dorian Gray
+                    </h1>
+                </div>
+                <img class="drawing" src="./images/draw.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="portrait">
+        <img class="frame" src="./images/rectangle-flower-frame-vector-2-1.png" alt="">
+        <img class="picture" id="third" src="./images/change_3.png" alt="">
+        <img class="picture" id="second" src="./images/change_2.png" alt="">
+        <img class="picture" id="first" src="./images/first_change.png" alt="">
+        <img class="picture" id="pic" src="./images/picture.png" alt="">
+
+
+    </div>
+    <div class="wrapper wrapper--footer">
+        <div class="g-fb-container" id="box">
+            <script src="./js/quote_card.js"></script>
+            <div class="g-fb-row quotes" id="card4">
+                <div class="g-fb-col-12 g-fb-col-md-4 quote_card left">
+                   <p><a href="https://www.netflix.com">Watch on Netflix</a> </p> 
+                </div>
+                
+                <div class="g-fb-col-12 g-fb-col-md-4 quote_card right">
+                    <p><a href="https://www.amazon.com/Picture-Dorian-Dover-Thrift-Editions/dp/0486278077">Buy the book</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end_quote">
+        <p>“Though your sins be as scarlet, yet I will make them as white as snow.”</p>
+    </div>
+    <div class="gang">
+        <img id="death" src="./images/death_basil.png" alt="" height="267">
+        <img id="basil" src="./images/basil_dorian.png" alt="" height="267">
+        <img id="dorian_flower" src="./images/dorian_flower.png" alt="" height="267">
+        <img id="henry" src="./images/henry_dorian.png" alt="" height="267">
+        <img id="brushes" src="./images/brushes.png" alt="" height="134">
+        <img id="begin" src="./images/begin_dorian.png" alt="" height="400">
+        <img class="flower_left" src="./images/bloem.png" alt="">
+        <img class="flower_right" src="./images/bloem.png" alt="">
+    </div>
+
+</body>
+<script src="./js/parallax.js"></script>
+<script>
+    const card1Elem = document.querySelector('#card1')
+    const card2Elem = document.querySelector('#card2')
+    const card3Elem = document.querySelector('#card3')
+    const picElem = document.querySelector('#pic')
+    const firstElem = document.querySelector('#first')
+    const secondElem = document.querySelector('#second')
+    const thirdElem = document.querySelector('#third')
+
+    window.addEventListener('scroll', (event) => {
+
+        if (card1Elem.getBoundingClientRect().top - window.innerHeight < -450) {
+            picElem.style.opacity = 0;
+            firstElem.style.opacity = 1;
+        } else {
+            picElem.style.opacity = 1;
+            firstElem.style.opacity = 0;
+        }
+        if (card2Elem.getBoundingClientRect().top - window.innerHeight < -450) {
+            picElem.style.opacity = 0;
+            firstElem.style.opacity = 0;
+            secondElem.style.opacity = 1;
+        }
+        if (card3Elem.getBoundingClientRect().top - window.innerHeight < -450) {
+            picElem.style.opacity = 0;
+            firstElem.style.opacity = 0;
+            secondElem.style.opacity = 0;
+            thirdElem.style.opacity = 1;
+        }
+    });
+</script>
+
+</html>

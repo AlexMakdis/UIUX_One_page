@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: linear-gradient(#FFFFFF, #560319);
+}
+
+
+@font-face {
+  font-family: 'Rage Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rage Italic'), url('RAGE_1.woff') format('woff');
+}
+
+
+
+/* First Page */
+.titel{
+  width: fit-content;
+  margin-top: 105px;
+  text-align: center;
+  font-family: 'Rage Italic';
+  
+}
+
+h1{
+  font-weight: 100;
+  font-size: 96px!important;
+}
+
+.drawing{
+  -webkit-filter: drop-shadow(150px 2px 0px rgba(0, 0, 0, 0.274));
+  filter:         drop-shadow(150px 2px 0px rgba(0,0,0,0.274)); 
+  position: absolute;
+  top: 53px ;
+  left: 52px ;
+  width: 233px;
+}
+#portrait{
+  width: 579px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 300px;
+  position: relative;
+  position: sticky;
+  top: 100px;
+  z-index: -10;
+}
+#portrait img{
+ transition: opacity 2s ease
+}
+
+.frame{
+  width: 579px;
+  height: 420px;
+}
+.picture{
+  width: 384px;
+  height: 221px;
+  position: absolute;
+  top: 100px;
+  left: 92px;
+}
+/* quotes */
+
+p{
+  font-size: 20px;
+  font-family: 'Marck Script', cursive;
+  line-height: 24px;
+}
+
+.quotes:first-child{
+  margin-top: 293px;
+}
+
+.quotes:nth-child(3) .left, .quotes:nth-child(3) .right, .quotes:last-child .left, .quotes:last-child .right{
+  background: linear-gradient(rgb(255, 255, 255,0.51), rgb(0, 0, 0,0.51));
+}
+
+.quotes{
+  justify-content: space-between;
+  margin-bottom: 350px;
+}
+
+.quote_card{
+  
+  background: linear-gradient(rgb(255, 255, 255,0.51),rgb(128, 128, 128, 0.51));
+  height: 351px;
+  text-align: center;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  
+  
+}
+
+.quote_card p{
+  position: relative;
+top: 50%;
+transform: translateY(-50%);
+color: #000000;
+
+  
+}
+
+.left{
+  width: 275px;
+  left: 100px;
+}
+
+.right{
+  width: 275px;
+  right: 100px;
+}
+
+/* End quote */
+.end_quote{
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  top: -250px;
+}
+.end_quote p{
+ font-size: 28px!important;
+}
+
+/* Gang */
+.gang{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+#basil{
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+#dorian_flower{
+  position: absolute;
+  left: 284px;
+  bottom: 0;
+}
+#brushes{
+  position: absolute;
+  left: 244px;
+  bottom: 0;
+}
+#begin{
+  position: absolute;
+  right: 511px;
+  bottom: 0;
+}
+#henry{
+  position: absolute;
+  right: 124px;
+  bottom: 0;
+}
+#death{
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}
+
+/* Flower */
+.flower_left{
+  transform: scaleX(-1);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+width: 100px;
+}
+.flower_right{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+}
+
+#card4{
+  margin-bottom: -20px;
+}
+
+#card4 div{
+  border-radius: 33px 33px 33px 33px;
+  height: 65px;
+  transition: 1s;
+}
+#card4 a{
+  text-decoration: none;
+  color: #000000;
+}
+#card4 div:hover{
+  transition: 1s ease;
+  background-color: #000000;
+}
+#card4 div:hover a{
+  transition: 2s ease;
+  transition-delay: 500ms;
+  color: #FFFFFF;
+}
